@@ -1,0 +1,237 @@
+@import "fonts"
+@import "var"
+// @import   @ / _media in the end of "style.sass"
+
+a 
+	text-decoration: none
+	&:hover
+		text-decoration: none
+button
+	outline: none
+	border: none
+button, input
+	&:focus
+		outline: none
+body
+	box-sizing: border-box
+	background: white
+// body
+
+// ===	====	====	header
+
+.header
+	width: 100%
+	height: 100%
+	background-image: url("#{$get-path-to-img}/bg_header.jpg")
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	background-position: center center
+	display: block
+.header:after
+	content: " "
+	clear: both
+	display: table
+
+.logo img
+	display: block
+	padding: 5% 0
+	margin: 0 auto
+
+.banner
+	text-align: center
+	text-transform: uppercase
+	font-family: "OpenSansRegular"
+	color: rgb(255, 255, 255)
+	line-height: 1.256
+	font-size: 3em
+	padding-bottom: 14%
+
+
+	span 
+		font-family: "OpenSansBold"
+
+// ===	====	====	lay- 1
+
+.boxes
+	padding: 0 15px
+	box-sizing: border-box
+	display: block
+	max-width: 993px
+	margin: 0 auto
+img 
+	width: auto
+	height: 100%
+.boxes:after
+	content: " "
+	clear: both
+	display: table
+.document
+	margin: 10% auto
+	float: left
+	width: 49%
+	word-spacing: 3px
+	p 
+		font-family: "OpenSansRegular"
+		color: rgb(79, 78, 78)
+		font-size: 0.875em		
+		line-height: 1.643
+	img 
+		margin: 5% 5% 5% 8%
+		float: left
+	h2 
+		margin-top: 2%
+		font-family: "Open Sans Semibold"
+		color: rgb(0, 0, 0)
+		line-height: 2.267
+.photo
+	margin: 10% 0 0 2%
+	float: left
+	width: 49%
+	p 
+		font-family: "OpenSansRegular"
+		color: rgb(79, 78, 78)
+		font-size: 0.875em
+		line-height: 1.643
+	img 
+		margin: 5% 5% 5% 8%
+		float: left
+	h2 
+		margin-top: 2%
+		font-family: "Open Sans Semibold"
+		color: rgb(0, 0, 0)
+		line-height: 2.267
+
+// ===	====	====	lay- 2
+.section_1
+	box-sizing: border-box
+	display: block
+	width: 100%
+	background: rgb(95,193,139)
+	height: 900px
+.section_1_container
+	margin: 0 auto
+	width: 650px
+
+.section_1_img_logo
+	padding-top: 15%
+
+	svg#filter_rays
+		position: static
+		margin-left: -15%
+	svg#tablet_svg
+		display: block
+		margin: -78.4% 0 0 39%
+
+
+.section_1_title
+	padding: 2% 0 0 0
+	color: rgb(255, 255, 255)
+	line-height: 1.576
+	font-size: 2.5em
+	font-family: "OpenSansSemiBold"
+	text-align: center
+
+
+.section_1_paragraph p 
+	font-family: "OpenSansRegular"
+	color: rgb(255, 255, 255)
+	line-height: 1.643
+	margin-top: 4%
+
+// SVG - layout for end preview layout
+
+.arrow_out_layout 
+	width: 100%
+
+svg#arrow_out_layout_helper
+	margin-top: -400px
+	width: 100%
+svg#arrow_out_layout_main
+	margin-top: -370px
+	width: 100%
+
+// Layout ===	3 =====		section 2
+
+.section_2_download
+	margin-top: -55px
+	width: 100%
+	background: rgb(68, 163, 111)
+	display: block
+
+.section_2_download_container
+
+	width: 80%
+	margin: 0 auto
+	padding-top: 5%
+	display: block
+.section_2_svg_icon
+	float: left
+	margin: 0 0 0 0
+	width: 40%
+
+	img 
+		padding-right: 5%
+.section_2_content
+	padding-bottom: 10%
+	width: 50%
+	margin: 0 0 0 40%
+	display: block
+	p#section_2_title
+		margin-top: -20px
+		color: rgb(255, 255, 255)
+		line-height: 1.576
+		font-size: 2.5em
+		font-family: "OpenSansSemiBold"
+		text-align: left
+
+	p#section_2_text
+		font-family: "OpenSansRegular"
+		color: rgb(255, 255, 255)
+		line-height: 1.643
+		margin-top: 4%
+
+	button#download 
+		font-family: "OpenSansSemiBold"
+		border-style: solid
+		border-width: 3px
+		border-radius: 8px
+		background-color: rgba(185, 222, 216, 0)
+		width: 200px
+		height: 55px
+		border-color: rgb(255, 255, 255)
+		color: rgb(255, 255, 255)
+		text-align: center
+		font-size: 1.75em
+		margin-top: 5%
+		letter-spacing: 1px
+
+		&:hover
+
+			cursor: pointer
+
+//   ====			===== 	contact layout 
+.contact
+	width: 100%
+	overflow: hidden
+	height: 600px
+iframe
+	width: 100%
+	height: 100%
+	border: 0
+//   ====			===== 	bottom layout
+
+.bottom
+	background-color: rgb(67, 160, 109)
+	color: rgb(255, 255, 255)
+	font-family: "OpenSansRegular"
+	width: 100%
+	height: 50px
+	font-size: 0.875em
+	text-align: center
+	padding: 15px
+
+
+// import @media
+@import "media"

@@ -1,0 +1,176 @@
+
+@media only screen and (max-width: 1444px)
+
+	.section_2_download_container
+		max-width: 95%
+		min-width: 90%
+
+
+
+@media only screen and (max-width: 1024px)
+
+@media only screen and (max-width: 768px)
+	.logo img
+		float: left
+		width: 15%
+		height: 15%
+		padding: 2% 0 15% 0
+		margin: 0 0 0 2%
+
+	.header_nav_btn
+		z-index: 11
+		position: fixed
+		display: block 
+		width: 50px
+		height: 50px
+		background-color: rgba(0, 0, 0, 0.4)
+		margin: 15px 0 0 0
+		border-radius: 50%
+		border: 1px solid rgba(255,255,255, 0.7)
+		right: 15px
+		&:hover
+			background-color: rgba(0, 0, 0, 0.6)
+			box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75)
+			-webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75)
+			-moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75)	
+		span
+			display: block
+			margin: 23px auto 0 auto 
+			width: 27px
+			height: 3px
+			background-color: white
+			&:before, &:after
+				content: " "
+				display: block
+				width: 27px
+				height: 3px
+				background-color: white
+			&:before
+				position: absolute
+				margin-top: -8px
+				transition: all 1s
+			&:after
+				transition: all 1s
+				position: absolute
+				margin-top: 8px
+	.header_nav_btn_active
+		z-index: 11
+		position: fixed
+		display: block 
+		width: 50px
+		height: 50px
+		background-color: rgba(0, 0, 0, 0.4)
+		margin: 15px 0 0 0
+		border-radius: 50%
+		border: 1px solid rgba(255,255,255, 0.7)
+		right: 15px
+		&:hover
+			background-color: rgba(0, 0, 0, 0.6)
+			box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75)
+			-webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75)
+			-moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75)	
+		span
+			background-color: transparent
+			&:before
+				margin: 0 auto
+				transition: all 1s
+				transform: rotate(315deg)
+			&:after
+				margin: 0 auto
+				transition: all 1s
+				transform: rotate(-315deg)
+
+	.header_nav_menu
+		z-index: 5
+		position: fixed
+		left: -100vw
+		background-color: rgba(62, 65, 66, 0.8)
+		width: 100vw
+		height: 100%
+		transition: all 0.8s
+		ul
+			width: 100%
+			height: 100%
+		ul li 
+			width: 100%
+			height: 20%
+
+			&:hover
+				background-color: rgba(0, 0, 0, 0.5)
+		ul li a 
+			display: flex
+			justify-content: center
+			align-items: center	
+			width: 100%
+			height: 100%
+			text-decoration: none
+			color: white
+			font-family: "OpenSansRegular"
+			font-size: 1em
+
+			&:visited
+				color: white
+				text-decoration: none
+			&:hover
+				color: rgba(252, 252, 167, 0.8)
+				text-decoration: none
+	.header_nav_menu_active
+		left: 0
+	.banner
+		display: block
+		clear: both
+		font-size: 2em
+
+
+	.document
+		height: 45%
+		display: inline-block
+		float: none
+		margin: 0 0
+		width: 100%
+		padding: 4% 0 4% 0
+		h2
+			margin-top: -2%
+		img
+			width: 15% 
+			height: auto
+			margin: 0 5% 0 0
+			padding: 0 0 0 0   
+	.photo
+		height: 45%
+		display: inline-block
+		float: none
+		margin: 0 0
+		width: 100%
+		padding: 2% 0 4% 0
+		img
+			width: 15% 
+			height: auto
+			margin: 0 5% 0 0
+			padding: 0 0 0 0
+		h2
+			margin-top: -2%
+	.section_1
+		max-height: 700px
+	.section_1_container
+		width: 90%
+	.section_1_img_logo
+		display: none
+	.section_1_img_logo svg
+		display: none
+	.section_1_title
+		padding: 5% 0 0 0
+	.section_2_svg_icon
+		display: none
+
+	.section_2_download_container
+		width: 90%
+	.section_2_content
+		width: 100%
+		margin: 0
+	button#download 
+		display: block
+		margin: 0 auto
+@media only screen and (max-width: 480px)
+
+@media only screen and (max-width: 320px)
